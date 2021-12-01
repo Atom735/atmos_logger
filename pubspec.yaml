@@ -4,9 +4,10 @@ version: 0.0.1
 environment:
   sdk: '>=2.14.4 <3.0.0'
 
+dependencies:
+  io: ^1.0.3
+  meta: ^1.7.0
+
 dev_dependencies:
   atmos_lints:
     path: ../atmos_lints
-dependencies: 
-  io: ^1.0.3
-  meta: ^1.7.0
