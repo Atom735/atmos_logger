@@ -3,7 +3,7 @@ version: 0.0.1
 publish_to: none
 
 environment:
-  sdk: '>=2.14.4 <3.0.0'
+  sdk: ">=2.14.4 <3.0.0"
 
 dependencies:
   io: ^1.0.3
@@ -11,4 +11,4 @@ dependencies:
 
 dev_dependencies:
   atmos_lints:
-    path: ../atmos_lints
+    git: git@github.com:Atom735/atmos_lints.git
