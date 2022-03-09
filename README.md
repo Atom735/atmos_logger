@@ -1,7 +1,22 @@
-# install
+# Atmos Logger Package
+
+## install
 
 ```yaml
 dependencies:
-  atmos_logger:
-    git: git@github.com:Atom735/atmos_logger.git
+  atmos_logger: ^0.16.1
+```
+
+## import
+
+### universal import
+
+```dart
+import 'package:atmos_logger/atmos_logger.dart';
+```
+
+### import for have LoggerFile
+
+```dart
+import 'package:atmos_logger/atmos_logger_io.dart';
 ```
