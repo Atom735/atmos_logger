@@ -4,7 +4,7 @@
 
 ```yaml
 dependencies:
-  atmos_logger: ^0.16.1
+  atmos_logger: ^0.17.0
 ```
 
 ## import

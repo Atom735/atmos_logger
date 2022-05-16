@@ -24,7 +24,7 @@ class LogDataConsoleWebEncoder extends LogDataEncoder<String> {
 
   @override
   String convert(LogData input) {
-    final result = '(${input.type}) ${input.title}\n'
+    final result = '(${input.name})\n${input.title}\n'
         '${input.body.isNotEmpty ? '$input\n' : ''}';
     if (result.length > 2048) {
       return '${result.substring(0, 2048)}...';

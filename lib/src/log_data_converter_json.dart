@@ -26,7 +26,7 @@ class LogDataJsonEncoder extends LogDataEncoder<Map> {
   Map convert(LogData input) => {
         'time_stamp': input.time.toIso8601String(),
         'level': input.level,
-        if (input.type.isNotEmpty) 'type': input.type,
+        if (input.name.isNotEmpty) 'type': input.name,
         if (input.title.isNotEmpty) 'title': input.title,
         if (input.body.isNotEmpty) 'body': input.body,
       };

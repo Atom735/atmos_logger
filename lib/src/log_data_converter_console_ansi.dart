@@ -26,7 +26,7 @@ class LogDataConsoleAnsiEncoder extends LogDataEncoder<String> {
   @override
   String convert(LogData input) {
     final result =
-        '${LogAnsiStyles.wrapLevel(input)} [${input.time}] (${input.type})\n'
+        '${LogAnsiStyles.wrapLevel(input)} [${input.time}] (${input.name})\n'
         ' ${LogAnsiStyles.wrapTitle(input)}\n'
         '${LogAnsiStyles.wrapBody(input)}';
     if (result.length > 2048) {

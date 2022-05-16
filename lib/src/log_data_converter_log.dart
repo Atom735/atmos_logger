@@ -61,7 +61,7 @@ class LogDataLogEncoder extends LogDataEncoder<String> {
   @override
   String convert(LogData input) => '$_cSOH${LogLevel.names[input.level]}'
       '[${input.time.toIso8601String()}]'
-      '(${input.type})\n'
+      '(${input.name})\n'
       '$_cSTX${input.title.replaceAllMapped(_regexp, _replacer)}$_cETX\n'
       '${input.body.isNotEmpty ? '$_cSTX'
           '${input.body.replaceAllMapped(_regexp, _replacer)}'

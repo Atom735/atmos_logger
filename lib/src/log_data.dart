@@ -2,7 +2,7 @@
 class LogData {
   const factory LogData(DateTime time, int level, String type, String title,
       [String body]) = LogData._;
-  const LogData._(this.time, this.level, this.type, this.title,
+  const LogData._(this.time, this.level, this.name, this.title,
       [this.body = '']);
 
   /// Метка времени лога
@@ -11,8 +11,8 @@ class LogData {
   /// Уровень сообщения
   final int level;
 
-  /// Тип сообщения
-  final String type;
+  /// Название логгера отправившего сообщения
+  final String name;
 
   /// Заголовок сообщения
   final String title;
@@ -23,14 +23,14 @@ class LogData {
   LogData copyWith({
     DateTime? time,
     int? level,
-    String? type,
+    String? name,
     String? title,
     String? body,
   }) =>
       LogData(
         time ?? this.time,
         level ?? this.level,
-        type ?? this.type,
+        name ?? this.name,
         title ?? this.title,
         body ?? this.body,
       );
@@ -42,11 +42,11 @@ class LogData {
     return other is LogData &&
         other.time == time &&
         other.level == level &&
-        other.type == type &&
+        other.name == name &&
         other.title == title &&
         other.body == body;
   }
 
   @override
-  int get hashCode => Object.hash(time, level, type, title, body);
+  int get hashCode => Object.hash(time, level, name, title, body);
 }

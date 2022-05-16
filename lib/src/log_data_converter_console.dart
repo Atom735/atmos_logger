@@ -26,7 +26,7 @@ class LogDataConsoleEncoder extends LogDataEncoder<String> {
   @override
   String convert(LogData input) {
     final result =
-        '${LogLevel.names[input.level]} [${input.time}]  (${input.type})\n'
+        '${LogLevel.names[input.level]} [${input.time}]  (${input.name})\n'
         '${input.title}\n'
         '${input.body.isNotEmpty ? '${input.body}\n' : ''}';
     if (result.length > 2048) {

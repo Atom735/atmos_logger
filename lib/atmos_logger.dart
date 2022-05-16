@@ -13,5 +13,5 @@ export 'src/logger_console_stub.dart'
     if (dart.library.io) 'src/logger_console_vm.dart'
     if (dart.library.html) 'src/logger_console_web.dart';
 export 'src/logger_filter.dart';
-export 'src/logger_prefix.dart';
+export 'src/logger_named.dart';
 export 'src/logger_print.dart';
