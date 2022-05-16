@@ -1,5 +1,5 @@
 name: atmos_logger
-version: 0.16.2
+version: 0.17.0
 description: "Logger package to log some messages by Atom735"
 repository: https://github.com/Atom735/atmos_logger
 environment:
